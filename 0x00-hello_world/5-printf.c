@@ -2,7 +2,7 @@
 /**
  * main - starter function
  * print a message
- * retunr 0 succsses
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
