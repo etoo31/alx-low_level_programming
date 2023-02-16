@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ -z "$CFILE" ]
+then
+    echo "Error: CFILE environment variable not set"
+    exit 1
+fi
+
+if [ ! -f "$CFILE" ]
+then
+    echo "Error: C file '$CFILE' not found"
+    exit 1
+fi
+
+OUTPUT_FILE="c"
+
+gcc -E "$CFILE" > "$OUTPUT_FILE"
+
+if [ $? -ne 0 ]
+then
+    echo "Error: failed to preprocess C file '$CFILE'"
+    exit 1
+fi
+
+echo "Preprocessed C file saved to '$OUTPUT_FILE'"
+
