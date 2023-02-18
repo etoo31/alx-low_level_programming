@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  * print all alphabet except e and q
