@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -17,5 +17,5 @@ int main(void)
  */
 void _putchar(void)
 {
-	printf("_putchar\n");
+	write(STDERR_FILENO, "_putchar\n", 9);
 }
