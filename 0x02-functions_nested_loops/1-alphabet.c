@@ -12,7 +12,7 @@ int main(void)
 /**
  * print_alphabet - function
  *
- * Return: Always 0
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -20,5 +20,5 @@ void print_alphabet(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 		_putchar(i);
-	return (0);
+	return;
 }
