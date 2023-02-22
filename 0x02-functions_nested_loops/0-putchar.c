@@ -1,11 +1,21 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - Entry point
- *print _putchar
+ *print call put char function
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("_putchar");
+	_putchar();
 	return (0);
+}
+/**
+ * _putchar - callable function
+ *print _putchar followed by new line
+ * Return: Always 0 (Success)
+ */
+void _putchar(void)
+{
+	printf("_putchar\n");
 }
