@@ -18,4 +18,5 @@ int main(void)
 void _putchar(void)
 {
 	write(STDERR_FILENO, "_putchar\n", 9);
+	return (0);
 }
