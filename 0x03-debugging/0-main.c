@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
 * main - tests function that prints if integer is positive or negative
@@ -6,10 +5,9 @@
 */
 int main(void)
 {
-	int ret;
+       	int i;
 
-	ret = positive_or_negative(0);
-	if (ret != 0)
-		printf("is not zero oh shit");
+	i = 0;
+	positive_or_negative(i);
 	return (0);
 }
