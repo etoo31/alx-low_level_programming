@@ -1,6 +1,7 @@
 #include "main.h"
 #include "7-print_diagonal.c"
 #include <stdio.h>
+#include "8-print_square.c"
 /**
  * main - check the code
  *
@@ -8,10 +9,9 @@
  */
 int main(void)
 {
-    print_diagonal(0);
-    print_diagonal(2);
-    print_diagonal(10);
-    print_diagonal(-4);
+    print_square(2);
+    print_square(10);
+    print_square(0);
     return (0);
 }
 void _putchar(char c)
