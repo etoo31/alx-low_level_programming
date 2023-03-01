@@ -10,26 +10,13 @@
  */
 void puts_half(char *str)
 {
-	int len, odd, even, i;
+	int len, n;
 
 	len = strlen(str);
-	if (len % 2 == 0)
+	n = len / 2;
+	for (i = n ; i < len ; i++)
 	{
-		even = len / 2;
-		for (i = even ; i < len ; i++)
-		{
-			putchar(str[i]);
-		}
-		putchar('\n');
+		putchar(str[i]);
 	}
-	else
-	{
-		odd = (len - 1) / 2;
-		for (i = odd ; i < len ; i++)
-		{
-			putchar(str[i]);
-		}
-		putchar('\n');
-	}
-
+	putchar('\n');
 }
