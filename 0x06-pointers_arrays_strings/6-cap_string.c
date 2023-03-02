@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdbool.h>
 /**
  * *cap_string - cap all words to string
  *
@@ -12,9 +11,9 @@ char *cap_string(char *str)
 {
 	int n, i;
 
-	bool cap;
+	int cap;
 
-	cap = true;
+	cap = 1;
 	n = strlen(str);
 	for (i = 0; i < n; i++)
 	{
@@ -22,7 +21,7 @@ char *cap_string(char *str)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] = str[i] - 32;
-			cap = false;
+			cap = 0;
 		}
 		char *s = ".,;!?(){} \n\t";
 
@@ -32,7 +31,7 @@ char *cap_string(char *str)
 		{
 			if (str[i] == s[j])
 			{
-				cap = true;
+				cap = 1;
 			}
 		}
 	}
