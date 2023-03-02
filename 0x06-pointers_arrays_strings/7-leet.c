@@ -3,7 +3,7 @@
 /**
  * *leet - encode a string
  *
- * @str : the string 
+ * @str : the string
  *
  * Return: the encoded string
  */
