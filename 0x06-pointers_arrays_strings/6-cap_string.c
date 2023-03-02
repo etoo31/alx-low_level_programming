@@ -23,17 +23,18 @@ char *cap_string(char *str)
 				str[i] = str[i] - 32;
 			cap = 0;
 		}
-		char *s = ".,;!?(){} \n\t";
-
-		int j;
-
-		for (j = 0; j < 12; j++)
-		{
-			if (str[i] == s[j])
-			{
-				cap = 1;
-			}
-		}
+		if (str[i] == '.' || str[i] == ',')
+			cap = 1;
+		if (str[i] == ';' || str[i] == '!')
+			cap = 1;
+		if (str[i] == '?' || str[i] == '(')
+			cap = 1;
+		if (str[i] == ')' || str[i] == '{')
+			cap = 1;
+		if (str[i] == '}' || str[i] == ' ')
+			cap = 1;
+		if (str[i] == '\n' || str[i] == '\t')
+			cap = 1;
 	}
 	return (str);
 }
