@@ -1,7 +1,6 @@
 #include "main.h"
 #include <string.h>
 #include <stdbool.h>
-#include <stdio.h>
 /**
  * *cap_string - cap all words to string
  *
