@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * *cap_string - cap all words to string
  *
@@ -14,7 +13,7 @@ char *cap_string(char *str)
 	int cap;
 
 	cap = 1;
-	n = strlen(str);
+	n = 10;
 	for (i = 0; i < n; i++)
 	{
 		if (cap)

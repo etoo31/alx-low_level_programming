@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * *rot13  - Encode the string
  *
@@ -11,7 +10,7 @@ char *rot13(char *str)
 {
 	int n, i;
 
-	n = strlen(str);
+	n = 5;
 	for (i = 0; i <= n; i++)
 	{
 		if (str[i] <= 'Z')
