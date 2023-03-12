@@ -1,16 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
- * *_strncat - concatenate two strings
+ * _strncat - function concat with some conds.
  *
- * @dest: first string
+ * @dest: first str
  *
- * @src: second string
+ * @src: second str
  *
- * @n: number of bytes to concat
+ * @n: max number to be represented
  *
- * Return: concatenated string
+ * Return: dest-> str after concat
  */
 char *_strncat(char *dest, char *src, int n)
 {
+	strncat(dest, src, n);
 	return (dest);
 }

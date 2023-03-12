@@ -1,16 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
- * *_strncpy - copy a specific number of bytes
+ * _strncpy - function concat with some conds.
  *
- * @dest: first string
+ * @dest: first str
  *
- * @src: second string
+ * @src: second str
  *
- * @n: number of bytes to cpy
+ * @n: max number to be represented
  *
- * Return: concatenated string
+ * Return: dest-> str after concat
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	strncpy(dest, src, n);
 	return (dest);
 }
